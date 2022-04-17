@@ -19,5 +19,10 @@ du -s -h ディレクトリ名
 du -a -h ディレクトリ名
 ```
 
+## vscode
+### 設定
+`Enable Preview`をoffにする
+
+`FilesAutoSave`をafterDelayにする
 
 
