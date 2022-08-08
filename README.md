@@ -7,6 +7,13 @@
 git rm --cached `git ls-files --full-name -i --exclude-from=.gitignore`
 ```
 
+## pip
+
+### pip install -r requirements.txtでエラーが出ても続行
+```
+cat requirements.txt | xargs -n 1 pip3 install
+```
+
 ## コマンド
 
 ### 容量
