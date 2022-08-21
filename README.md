@@ -6,6 +6,26 @@
 ```
 git rm --cached `git ls-files --full-name -i --exclude-from=.gitignore`
 ```
+### 直前のcommitをなかったことにする
+```
+git reset --soft HEAD^
+```
+### git rebase (a)->(b)
+```
+git rebase master <branch_name>
+```
+```
+(a)
+      A---B---C <branch_name>
+     /
+D---E---F---G master
+
+(b)
+              A'---B'---C' <branch_name>
+             /
+D---E---F---G master
+```
+
 
 ## pip
 
