@@ -26,6 +26,10 @@ D---E---F---G master
 D---E---F---G master
 ```
 
+### git remoteの変更
+```
+git remote set-url origin {new url}
+```
 
 ## pip
 
