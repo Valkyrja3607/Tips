@@ -10,6 +10,10 @@ git rm --cached `git ls-files --full-name -i --exclude-from=.gitignore`
 ```
 git reset --soft HEAD^
 ```
+### 直前のaddをなかったことにする
+```
+git reset HEAD <file_name>
+```
 ### git rebase (a)->(b)
 ```
 git rebase master <branch_name>
