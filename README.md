@@ -60,4 +60,9 @@ du -a -h ディレクトリ名
 
 `FilesAutoSave`をafterDelayにする
 
+## PyTorch
+### 少数3桁までe+02とかにしない
+```
+torch.set_printoptions(precision=3, sci_mode=False)
+```
 
