@@ -36,7 +36,10 @@ git remote set-url origin {new url}
 ```
 
 ## pip
-
+### requirements.txtの作成
+```
+pip freeze > requirements.txt
+```
 ### pip install -r requirements.txtでエラーが出ても続行
 ```
 cat requirements.txt | xargs -n 1 pip3 install
