@@ -74,3 +74,9 @@ ls -U1 | wc -l
 torch.set_printoptions(precision=3, sci_mode=False)
 ```
 
+## Lightgbm
+### log出力しない
+```
+lgb.train(lgbm_params, lgb_train, valid_sets=lgb_eval, verbose_eval=False)
+```
+
