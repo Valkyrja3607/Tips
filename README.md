@@ -45,6 +45,18 @@ pip freeze > requirements.txt
 cat requirements.txt | xargs -n 1 pip3 install
 ```
 
+## ssh
+### 公開鍵周り
+#### クライアントPCで鍵を作る
+```
+ssh-keygen -t rsa -b 4096
+```
+
+#### リモートへ公開鍵を転送する
+```
+ssh-copy-id -i ~/.ssh/id_rsa.pub [リモートユーザー]@[リモートサーバーのホスト名]
+```
+
 ## コマンド
 
 ### 容量
