@@ -30,6 +30,17 @@ D---E---F---G master
 D---E---F---G master
 ```
 
+### 行ってる作業の一時退避
+```
+git stash
+```
+
+### 退避した作業を戻す
+```
+git stash pop
+```
+
+
 ### git remoteの変更
 ```
 git remote set-url origin {new url}
