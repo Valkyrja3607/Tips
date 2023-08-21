@@ -103,3 +103,9 @@ torch.set_printoptions(precision=3, sci_mode=False)
 lgb.train(lgbm_params, lgb_train, valid_sets=lgb_eval, verbose_eval=False)
 ```
 
+## その他
+### pydensecrfのインストール
+```
+pip install --force-reinstall cython==0.29.36
+pip install --no-build-isolation git+https://github.com/lucasb-eyer/pydensecrf.git
+```
