@@ -1,5 +1,25 @@
 # Tips
 
+## Docker
+
+### Dockerの使用容量を確認
+```
+docker system df
+```
+### 全コンテナ一括削除
+```
+docker container prune
+```
+### 未使用イメージ一括削除
+```
+docker image prune
+```
+### タグ無しイメージ一括削除
+```
+docker rmi `docker images -f "dangling=true" -q`
+```
+
+
 ## git
 
 ### .gitignoreを後から反映
