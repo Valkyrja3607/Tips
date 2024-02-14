@@ -19,6 +19,10 @@ docker image prune
 docker rmi `docker images -f "dangling=true" -q`
 ```
 
+### Build cacheの削除
+```
+docker builder prune
+```
 
 ## git
 
