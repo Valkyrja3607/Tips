@@ -109,6 +109,11 @@ du -a -h ディレクトリ名
 ls -U1 | wc -l
 ```
 
+### Ubuntuのメモリ容量をプロセスごとに表示
+```
+ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%mem
+```
+
 ## vscode
 ### 設定
 `Enable Preview`をoffにする
