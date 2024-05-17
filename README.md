@@ -132,6 +132,33 @@ torch.set_printoptions(precision=3, sci_mode=False)
 lgb.train(lgbm_params, lgb_train, valid_sets=lgb_eval, verbose_eval=False)
 ```
 
+## Ubuntu nvidia-driver
+
+### Nouveau の無効化
+```
+sudo gedit /etc/modprobe.d/blacklist-nouveau.conf
+```
+
+nouveauの設定ファイルを新規作成して以下を記入して保存
+```
+blacklist nouveau
+options nouveau modeset=0
+```
+以下を実行
+```
+sudo update-initramfs -u
+```
+### ドライバインストール 
+
+```
+ubuntu-drivers devices  # recommendがおすすめ
+
+sudo add-apt-repository ppa:graphics-drivers/ppa
+sudo apt install nvidia-driver-535
+```
+
+
+
 ## その他
 ### pydensecrfのインストール
 ```
